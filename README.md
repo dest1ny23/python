@@ -25,3 +25,22 @@ for i in image:
         img.write(res.content)
         img.close()
         print(name+".jpg 获取成功......")
+
+
+        append #可以加元素
+  startswith #开头
+  capitalize #让首字母大写
+  title #让单词首字母大写
+
+ import random
+ import string
+ import webbrowser
+ characters = string.ascii_letters + string.digits
+ random_code = ''.join(random.sample(characters, 4)) #关键代码
+ word = input(f"请输入验证码({random_code}):")                            
+ if word.upper() == random_code.upper():
+     url = "https://www.bilibili.com/"
+     webbrowser.open(url)
+ else:     print("验证码输入错误")
+
+        
